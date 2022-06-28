@@ -1,6 +1,6 @@
 {
   "request_id": "220628122100_4ce28d3b-5aee-5653-9f98-c29aeebfe41f",
-  "status": "pending",
+  "status": "invalid",
   "request": {
     "source_credentials": "e02121a4-a87d-491b-b207-f8ba7c5fbb68",
     "target_credentials": "0374c8d3-603a-48e7-9049-0dc531bd9bb2",
@@ -56,5 +56,8 @@
     }
   },
   "created_at": "2022-06-28T12:21:00.515276+00:00",
-  "_signature": "tuKg/u3+fe/gEyUNK2QbzNTJFUkAQ5oPt+Z7+ehHRFLQy6+H1ehOjoyh6KDQmJrKhH3iPjdKBVUtz7j8CLkeBQ=="
+  "failed_at": "2022-06-28T12:21:15.621935+00:00",
+  "error_code": 403,
+  "error_message": "INFO Retrieving data for day 2022-01-01INFO URL being requested: POST https://analyticsreporting.googleapis.com/v4/reports:batchGet?alt=json\nINFO Attempting refresh to obtain initial access_token\nINFO Refreshing access_token\nWARNING Encountered 403 Forbidden with reason \"forbidden\"\nWARNING request failed with 'User does not have any Google Analytics account.', will retry\nCRITICAL Received fatal error <HttpError 403 when requesting https://analyticsreporting.googleapis.com/v4/reports:batchGet?alt=json returned \"User does not have any Google Analytics account.\">, reason=forbidden, status=403\nERROR Giving up query_api(...) after 1 tries (googleapiclient.errors.HttpError: <HttpError 403 when requesting https://analyticsreporting.googleapis.com/v4/reports:batchGet?alt=json returned \"User does not have any Google Analytics account.\">)\nERROR Stopping execution while processing 'campaign_adcontent_performance_v2' due to Unknown Errors.\n",
+  "_signature": "PLjLRfeKDeOumYswu9oVsVeKruj0Y2QVF64UQJUi8T+3wqxeUEQCN0uagCqUWNgijRcXJRJUUbu7gjL4nYeoCA=="
 }
