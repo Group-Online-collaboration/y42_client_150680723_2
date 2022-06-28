@@ -1,0 +1,63 @@
+{
+  "request_id": "220628122100_4ce28d3b-5aee-5653-9f98-c29aeebfe41f",
+  "status": "invalid",
+  "request": {
+    "source_credentials": "e02121a4-a87d-491b-b207-f8ba7c5fbb68",
+    "target_credentials": "0374c8d3-603a-48e7-9049-0dc531bd9bb2",
+    "source_settings": {
+      "$schema": "https://s.y42.com/integrations/google-analytics/0.0.0/source.json",
+      "start_date": "2022-01-01T00:00:00Z",
+      "parent_id": "150680723"
+    },
+    "table_settings": {
+      "$schema": "https://s.y42.com/integrations/google-analytics/0.0.0/table",
+      "columns": [
+        "ga_date",
+        "ga_channelGrouping",
+        "ga_sourceMedium",
+        "ga_campaign",
+        "ga_adContent",
+        "ga_adGroup",
+        "ga_countryIsoCode",
+        "ga_users",
+        "ga_newUsers",
+        "ga_sessions",
+        "ga_sessionDuration",
+        "ga_pageviews",
+        "ga_bounces",
+        "ga_transactions",
+        "ga_transactionRevenue",
+        "report_start_date",
+        "report_end_date"
+      ],
+      "import": "campaign_adcontent_performance_v2"
+    },
+    "created_at": "2022-06-28T12:21:00.515276+00:00",
+    "target": {
+      "storage": {
+        "type": "githubapp",
+        "path": "/src/Integrations/G_Analytics/campaign_adcontent_performance_v2/",
+        "id": "5:65095fb2-8e1d-4f09-9c6c-a7251da50247",
+        "branch": "main"
+      },
+      "info": {
+        "app_id": "25917863",
+        "owner": "Group-Online-collaboration",
+        "repo": "y42_client_150680723_2",
+        "commit_sha": "f8273d18b76f3a52b07e7f87e70cf67d7ce60f65"
+      }
+    },
+    "context": {
+      "company_id": 5,
+      "company_slug": "grouponline",
+      "triggered_by_type": "user",
+      "triggered_by_id": "32",
+      "trial": false
+    }
+  },
+  "created_at": "2022-06-28T12:21:00.515276+00:00",
+  "failed_at": "2022-06-28T12:21:15.621935+00:00",
+  "error_code": 403,
+  "error_message": "INFO Retrieving data for day 2022-01-01INFO URL being requested: POST https://analyticsreporting.googleapis.com/v4/reports:batchGet?alt=json\nINFO Attempting refresh to obtain initial access_token\nINFO Refreshing access_token\nWARNING Encountered 403 Forbidden with reason \"forbidden\"\nWARNING request failed with 'User does not have any Google Analytics account.', will retry\nCRITICAL Received fatal error <HttpError 403 when requesting https://analyticsreporting.googleapis.com/v4/reports:batchGet?alt=json returned \"User does not have any Google Analytics account.\">, reason=forbidden, status=403\nERROR Giving up query_api(...) after 1 tries (googleapiclient.errors.HttpError: <HttpError 403 when requesting https://analyticsreporting.googleapis.com/v4/reports:batchGet?alt=json returned \"User does not have any Google Analytics account.\">)\nERROR Stopping execution while processing 'campaign_adcontent_performance_v2' due to Unknown Errors.\n",
+  "_signature": "PLjLRfeKDeOumYswu9oVsVeKruj0Y2QVF64UQJUi8T+3wqxeUEQCN0uagCqUWNgijRcXJRJUUbu7gjL4nYeoCA=="
+}
